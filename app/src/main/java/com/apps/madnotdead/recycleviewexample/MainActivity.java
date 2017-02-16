@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         myRV = (RecyclerView) findViewById(R.id.main_recycle_view);
 
         LinearLayoutManager lm = new LinearLayoutManager(this);
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.HORIZONTAL );
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
-        myRV.setLayoutManager(staggeredGridLayoutManager);
+       // StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.HORIZONTAL );
+       // GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
+        myRV.setLayoutManager(lm);
 
         ArrayList<Person> persons = new ArrayList<>();
         persons.add(new Person("John","23"));
